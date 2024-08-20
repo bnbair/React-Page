@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slider-container {
+  position: relative;
+  margin: 50px auto 20px auto;
+  width: 600px;
+  height: 300px;
+}
+
+/* Style each slide */
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.photo {
+  width: 100%;
+  object-fit: cover;
+  animation:ne-resize;
+    height: undefined;
+	  margin-top: -22px;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border: none;
+}
+
+/* Position the "next" button to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a semi-transparent black background */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.caption {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* The dots indicator */
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.active,
+.dot:hover {
+  background-color: gray;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.online {
+  color: blue;
+}
+
+.offline {
+  color: red;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the video is behind other content */
+}
+
+/* Styling for the navbar container */
+.navbar {
+    background-color: #2C3E50;  /* Dark blue shade */
+    height: 60px;
+    display: flex;
+    align-items: center;        /* Center items vertically */
+    justify-content: space-between;
+    padding: 0 20px;           /* Horizontal padding */
+    font-family: Arial, sans-serif;position: sticky;
+    top: 0;
+	z-index: 1000; 
+}
+
+/* Logo styling */
+.navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Navigation link styling */
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #ff4500;
+}
+
+.navbar a {
+    text-decoration: none;  /* Remove underlines */
+    color: #ECF0F1;         /* Light color for contrast */
+    margin: 0 10px;         /* Space out links */
+    transition: color 0.3s; /* Smooth color transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #E74C3C;        /* Reddish color for hover */
+}
+
+/* For devices with max-width of 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;   /* Stack items vertically */
+        height: auto;             /* Auto adjust height */
+    }
+
+    .navbar a {
+        margin: 5px 0;           /* Adjust link margins */
+    }
+}
+
+
+.navbar-logo {
+    font-size: 1.8rem;       /* Bigger font size for the logo */
+    font-weight: bold;       /* Bold text for emphasis */
+    color: #E67E22;         /* Orange shade to make it stand out */
+}

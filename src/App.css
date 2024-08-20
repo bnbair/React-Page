@@ -36,3 +36,216 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container {
+	  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  width: 320px;
+  height: 240px;
+}
+
+img {
+  max-width: 320px;
+}
+
+.box2 {
+  width: 320px;
+  height: 240px;
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  width: 320px;
+  height: 240px;
+  background: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.input {
+  margin-bottom: 30px;
+  padding: 5px 15px;
+  width: 300px;
+}
+
+.btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+/* Header section */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #4caf50;
+  color: red;
+  padding: 50px 0;
+}
+
+/* Styling the progress indicator */
+.progress-container {
+  background: #f8bbd0;
+  box-shadow: 0 2px 4px #999;
+  height: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ffc107;
+}
+
+/* Main content */
+main.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer section */
+footer {
+  padding: 50px 0;
+  min-height: 150vh;
+  background: #3f51b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+textarea {
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  outline: none;
+}
+
+.back-button {
+    padding: 10px 30px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.back-button:hover {
+    background: #0d47a1;
+}
+
+.containerbBelow {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 100px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+}
+
+.back-to-top:hover {
+  background: red;
+}
+
+/* Just some color boxes to make the page longer */
+.box {
+  width: 100%;
+  height: 80vh;
+  margin: 30px 0;
+}
+
+.box--1 {
+  background: yellow;
+}
+
+.box--2 {
+  background: green;
+}
+
+.box--3 {
+  background: pink;
+}
+
+.box--4 {
+  background: grey;
+}
+
+.box--5 {
+  background: purple;
+}
+
+
+.dropdown-container {
+  position: relative;
+  width: 200px;
+}
+
+.dropdown-button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.dropdown-button:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-button:active {
+  background-color: #e0e0e0;
+}.dropdown-content.show {
+  display: block;
+}dropdown-option {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.dropdown-option:hover {
+  background-color: #e9e9e9;
+}
